@@ -65,7 +65,7 @@ $ . devel/setup.bash
 </robot>
 ```
 
-* step 5. Now crate a launch folder under model_make. Put following code:
+* step 5. Now create a launch folder under model_make. Create a file named *rviz.launch* and put following code:
 ```
 <launch>
 
@@ -82,4 +82,14 @@ $ . devel/setup.bash
     <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" >
   </node>
 </launch>
+```
+
+* step 6. Go back to *~/catkin_ws* and run following command in terminal:
+```
+$ catkin_make
+$ rospack profile
+```
+*step 7. now launch the bot in rviz with following command:
+```
+$ roslaunch model_make rviz.launch 
 ```
