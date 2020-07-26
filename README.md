@@ -89,7 +89,7 @@ $ . devel/setup.bash
 $ catkin_make
 $ rospack profile
 ```
-*step 7. now launch the bot in rviz with following command:
+* step 7. now launch the bot in rviz with following command:
 ```
 $ roslaunch model_make rviz.launch 
 ```
