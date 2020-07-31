@@ -16,7 +16,8 @@ $ source devel/setup.bash
 ---
 * step 3. Create a package named model_make in the  ~/catkin_ws/src
 ```
-$ catkin_create_pkg model_make roscpp rospy std_msgs urdf joint_state_publisher
+$ catkin_create_pkg model_make  urdf joint_state_publisher gazebo_ros
+
 ```
 >Now you need to build the packages in the catkin workspace:
 ```
@@ -93,3 +94,6 @@ $ rospack profile
 ```
 $ roslaunch model_make rviz.launch 
 ```
+
+
+
